@@ -1,4 +1,4 @@
-/*....WAP IN C FOR BANKING MANAGEMENT SYSTEM FOR FUNCTIONS LIKE WITHDRAW, DIPOSIT,COMPOUND INTEREST CALCULATION, BALANCE DISPLAY....*/
+/*....PROGRAM  IN C FOR BANKING MANAGEMENT SYSTEM FOR FUNCTIONS LIKE WITHDRAW, DIPOSIT,COMPOUND INTEREST CALCULATION, BALANCE DISPLAY....*/
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -61,7 +61,6 @@ int main()
 }
 
 // FUNCTION DECLARATIONS:
-//------------------------------------------------------------------------------------------
 void menu()
 {
     printf("\n~~WELCOME TO BANKING SYSTEM~~\n");
@@ -72,7 +71,8 @@ void menu()
     printf(" 4. DISPLAY BALANCE\n");
     printf(" 5. EXIT\n");
 }
-//------------------------------------------------------------------------------------------
+
+
 void deposit(float *balance, float amount)
 {
     if (amount < 0)
@@ -85,7 +85,8 @@ void deposit(float *balance, float amount)
         printf("Blance added successfully!!.. \nTotal balance available is: %.2f", *balance);
     }
 }
-//---------------------------------------------------------------------------------------------
+
+
 void withdraw(float *balance, float amount)
 {
     if (amount <= 0)
@@ -102,12 +103,14 @@ void withdraw(float *balance, float amount)
         printf("Amount deducted successfully!! \n Available balance is : %.2f\n", *balance);
     }
 }
-//--------------------------------------------------------------------------------------------
+
+
 void displayBalance(float balance)
 {
     printf("The available balance in your accout is :\n %.2f", balance);
 }
-//--------------------------------------------------------------------------------------------
+
+
 void compoundInterest(float *balance, float rate, int time)
 {
 
@@ -126,4 +129,3 @@ void compoundInterest(float *balance, float rate, int time)
     }
 }
 
-//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++//
